@@ -32,9 +32,9 @@ def parse_args():
     p.add_argument("--batch_size", type=int, default=32)
     p.add_argument("--test_batch_size", type=int, default=100)
     p.add_argument("--lr", type=float, default=1e-3)
-    p.add_argument("--early_stop_asr", type=float, default=90.0,
+    p.add_argument("--early_stop_asr", type=float, default=95.0,
                    help="Stop when both ACC and ASR reach this threshold.")
-    p.add_argument("--early_stop_acc", type=float, default=90.0)
+    p.add_argument("--early_stop_acc", type=float, default=91.0)
     return p.parse_args()
 
 
